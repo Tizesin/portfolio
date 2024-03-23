@@ -1,0 +1,93 @@
+*{margin:0; padding:0;}
+li { list-style:none; }
+address,em,i { font-style:normal; }
+a { text-decoration: none; color:#fff; }
+html { overflow-x: hidden; }
+body { width:100%;font-family: 'Pretendard', 'GmarketSans', serif;  color:#fff; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Pretendard', 'GmarketSans', serif; }
+
+/*공통*/
+section { width:100%; }
+section>div.inner  { position: relative; max-width:1500px; height:100%; margin:0 auto; }
+#flex { display:flex; flex-wrap:wrap; }
+.left { }
+.right { }
+.color { color:#51D2EA; }
+
+/*section별 배경색*/
+#section1 { background-color: #212121; }
+#section2 { background-color: #212121; }
+#section3{ background:#212121 url(../images/section3_bg.jpg) center center no-repeat; background-size:cover;  } 
+#section4{ background:#212121 url(../images/section4_bg.jpg) center center no-repeat; background-size:cover;  } 
+#section5{ background:#212121 url(../images/section5_bg.jpg) center center no-repeat; background-size:cover;  } 
+#section6 { background-color: #212121; }
+
+/*section1*/
+#section1 h1 { font-size:100px; padding-top:100px;  }
+#section1 p { font-size:35px; }
+
+.text_box{ font-size: 2rem;}
+.blink { animation: blink 0.5s infinite; font-size: 2rem; }
+@keyframes blink {
+    to { opacity: 0; }
+}
+
+#section1 .about-info { position:absolute; right:0; bottom:30px; font-size:16px; }
+#section1 .about-info strong { font-size:30px; display:block; margin-bottom:20px; }
+#section1 .about-info span { display:block; font-size:18px; line-height:30px;  }
+
+/*section2*/
+#section2>div { align-content:center;  }
+
+#section2 div.left { position:relative; width:40%;  }
+#section2 div.left h1 { position:absolute; left:0; top:50%; transform:translate(0%,-50%); font-size:80px; font-weight:800; }
+#section2 div.left h1 b { font-weight:800; }
+
+#section2 div.right { width:60%; }
+#section2 div.right ul:nth-of-type(1) { width:50%; }
+#section2 div.right ul:nth-of-type(2) { width:50%; }
+#section2 div.right ul li { width:90%; margin:10% 5%;  }
+#section2 div.right ul li b { font-size:30px; display:block; }
+#section2 div.right ul li b:after { display:block; content:""; width:100%; height:1px; background:#333; margin:10px 0; }
+#section2 div.right ul li span { position:relative; display:block; font-size:20px; }
+#section2 div.right ul li span::after { display:block; content:""; width:1px; height:100%; background:#ccc;  position:absolute; left:3px; top:5px;  }
+#section2 div.right ul li span em { position:relative; display:block; padding-left:20px; margin-right:20px; margin-bottom:20px; }
+#section2 div.right ul li span em::before { display:block; content:""; width:6.5px; height:6.5px; border:1px solid #777; background:#fff; position:absolute; left:0; top:5px; border-radius:50%; z-index:1;  }
+#section2 div.right ul li span em i { color:#777; font-size:18px; display:block; margin-top:5px;  font-weight:100;  }
+#section2 div.right ul li  table { width:100%; border-collapse:collapse; }
+#section2 div.right ul li  table tr { display:block; }
+#section2 div.right ul li  table tr th { display:block; font-size:25px;  }
+#section2 div.right ul li  table tr td { text-align:center; padding:15px 0 20px 0; }
+#section2 div.right ul li table tr td i {color:#777; font-size:15px; display:block; font-weight:300; letter-spacing: -0.5px; transition:all .3s;}
+#section2 div.right ul li  table tr td img { display:block; width:100%; -webkit-filter:grayscale(100%); transition:all .3s; }
+#section2 div.right ul li  table tr td img:hover { filter:none; }
+#section2 div.right ul li table tr td:hover i { color:#51D2EA; }
+
+/*section3*/
+#section3 {}
+
+/*section4*/
+#section4 {}
+
+/*section5*/
+#section5 {}
+
+/*PROJECT 공통*/
+.project-title { width:100%; padding:50px 0; align-items:center; flex-wrap:nowrap!important; }
+.project-title h3 { font-weight: 800; }
+.project-title h3:nth-of-type(1) { font-size:80px; }
+.project-title h3:nth-of-type(2) { width:100%; background:#fff; height:1px; margin:0 50px; }
+.project-title h3:nth-of-type(3) { font-size:50px; text-align:right; white-space : nowrap; }
+
+.project-content {}
+.project-content table { font-size:22px; line-height: 35px; }
+.project-content table tr { }
+.project-content table tr th { vertical-align: -webkit-baseline-middle; }
+.project-content table tr th:nth-of-type(1) { padding-right:5px;  }
+.project-content table tr th:nth-of-type(2) { text-align:center;  }
+.project-content table tr td { padding:0 15px 20px 15px; }
+
+
+/*section6*/
+#section6 {}
+
