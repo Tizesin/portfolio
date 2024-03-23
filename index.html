@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINJUN | 포트폴리오</title>
+	<!-- <meta property="og:image" content="myimage.jpg">
+    <link rel="SHORTCUT ICON" href="favicon.ico" />
+    <meta name="description" content="MINJUN 포트폴리오">
+    <meta property="og:description" content="MINJUN 포트폴리오"> -->
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/full-page-scroll.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+	<!--애니메이션효과-->
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- AOS 라이브러리 불러오기-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
+	
+
+	<!--script CDM연결방식-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+	<!--폰트어썸-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+	
+</head>
+<style>
+    .tab {
+        margin-left: 20px; /* 원하는 여백 크기로 조절 가능 */
+    }
+</style>
+<body>
+	<div id="main" class="scroll-container">
+		<section id="section1">
+			<div class="inner">
+				<h1><b class="color">P</b>ORTFOLIO.</h1>	
+				<div class="text_box">
+					<span class="text"></span><span class="blink">|</span>
+				  </div>
+				<div class="about-info">
+					<strong class="color">SHIN MIN JUN</strong>
+					<span><i class="fa-solid fa-crown"></i> 신민준</span>
+					<span><i class="fa-solid fa-cake-candles"></i> 1998.07.15</span>
+					<span><i class="fa-solid fa-mobile"></i> 010-6279-0013</span>
+					<span><i class="fa-solid fa-envelope"></i> tlsalswns0o@naver.com
+					</span>
+					<span><i class="fa-solid fa-globe"></i> https://tizesin.tistory.com
+					</span>
+				</div>
+			</div>
+			<script>
+				const content = "팀원과의 협업을 중요 시 여기는 \n 2년 차 임베디드 개발자 신민준 입니다.";
+				const text = document.querySelector(".text");
+				let i = 0;
+
+				function typing(){
+					let txt = content[i++];
+					text.innerHTML += txt=== "\n" ? "<br/>": txt;
+					if (i > content.length) {
+						text.textContent = "";
+						i = 0;
+					}
+				}
+				setInterval(typing, 100)
+			</script>
+		</section>
+		<section id="section2">
+			<div id="flex" class="inner">
+				<div class="left">
+					<h1>만나서<br>반갑습니다<br><b class="color">신민준</b>입니다</h1>
+				</div>
+				<div id="flex" class="right">
+					<ul>
+						<li>
+							<b class="color">EDUCATION & HISTORY</b>
+							<span>
+								<em>CNSLINK<i>2021.07 ~ 2023.12</i></em>
+								<em>동서울대학교 | 컴퓨터소프트웨어학과<i>2017.03 ~ 2022.02</i></em>
+							</span>
+						</li>
+						<li>
+							<b class="color">LICENSE</b>
+							<span>
+								<em>정보처리기사 필기 합격</em>
+								<em>문서실무사 1급</em>
+								<em>워드프로세스 2급</em>
+								<em>자동차 운전면허 1종</em>
+							</span>
+						</li>
+						<li>
+							<b class="color">PROJECT</b>
+							<span>
+								<em>전기차 충전기 Router</em>
+								<em>BLE / 얼굴인식 출입문 개폐기</em>
+								<em>BLE / 모션인식 출입문 개폐기</em>
+							</span>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b class="color">SKILL & TOOL</b>
+							<table>
+								<!-- <colgroup>
+									<col width="50%">
+									<col width="50%">
+									<col width="50%">
+								</colgroup> -->
+								<tr>
+									<th>Language</th>
+									<td><img src="images/skill01.png" alt=""><i>C</i></td>
+									<td><img src="images/skill02.png" alt=""><i>C++</i></td>
+									<td><img src="images/skill00.png" alt=""></td>
+								</tr>
+								<tr>
+									<th>Tool</th>
+									<td><img src="images/skill03.png" alt=""><i>VSCODE</i></td>
+									<td><img src="images/skill04.png" alt=""><i>VS</i></td>
+									<td><img src="images/skill05.png" alt=""><i>Simplicity studio5</i></td>
+								</tr>
+								<tr>
+									<th>ETC</th>
+									<td><img src="images/skill06.png" alt=""><i>SVN</i></td>
+									<td><img src="images/skill07.png" alt=""><i>Linux</i></td>
+									<td><img src="images/skill00.png" alt=""></td>
+								</tr>
+							</table>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="section3">
+			<div class="inner">
+				<div id="flex" class="project-title">
+					<h3 class="color">PROJECT</h3>
+					<h3></h3>
+					<h3>전기차 충전기 Router</h3>
+				</div>
+				<div class="project-content">
+					<table>
+						<tr>
+							<th><i class="fa-solid fa-calendar-days"></i></th>
+							<th>개발기간</th>
+							<td>2022.05 ~ 2022.12 ( 8개월 )</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-people-group"></i></th>
+							<th>개발인원</th>
+							<td>3명</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-circle-check"></i></th>
+							<th>담당역할</th>
+							<td>
+								S/W 개발<br>
+								 - 전기차 충전기 TCP 통신 ( 기여도 100% )<br>
+								 - OneM2M 플랫폼 HTTP 통신 ( 기여도 70% )
+							</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-computer"></i></th>
+							<th>작업 설명</th>
+							<td>전기차 충전기와 OneM2M 서버 간의 통신 중계 역할.</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-folder-tree"></i></th>
+							<th>개발환경</th>
+							<td>
+								- Embedded<br>
+								- OS : Linux <br>
+								- Tool : Simplicity studio 5 <br>
+								- Language : C<br>
+								- DB : maria DB<br>
+								- 사용 기술 : SOCKET / CURL
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section id="section4">
+			<div class="inner">
+				<div id="flex" class="project-title">
+					<h3 class="color">PROJECT</h3>
+					<h3></h3>
+					<h3>BLE / 얼굴인식 출입문 개폐기</h3>
+				</div>
+				
+				<div class="project-content">
+					<table>
+						<tr>
+							<th><i class="fa-solid fa-calendar-days"></i></th>
+							<th>개발기간</th>
+							<td>2023.02 ~ 2023.12 ( 12개월 )</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-people-group"></i></th>
+							<th>개발인원</th>
+							<td>5명</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-circle-check"></i></th>
+							<th>담당역할</th>
+							<td>
+								 S/W 개발<br>
+								 - BLE 통신 ( 기여도 70% )<br>
+								 - UI 개발 ( 기여도 80% )<br>
+								 - 서버 통신 ( 기여도 70% )<br>
+								 - 기능 구현 ( 기여도 80% )
+							</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-computer"></i></th>
+							<th>작업 설명</th>
+							<td>사용자의 얼굴과 핸드폰의 BLE 정보를 읽어내 일치 할 경우 출입문을 개폐하는 장치 개발.
+						</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-folder-tree"></i></th>
+							<th>개발환경</th>
+							<td>
+								- Embedded<br>
+								- OS : Linux <br>
+								- Tool : Simplicity studio 5 / Android Studio / Swift<br>
+								- Language : C / C++<br>
+								- DB : maria DB<br>
+								- 사용 기술 : <br>
+								<div class="tab"></div>SOCKET / CURL / WATCHDOG ( SW/HW )<br>
+											 OPENCV / MPG / UART / GPIO / JSON
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section id="section5">
+			<div class="inner">
+				<div id="flex" class="project-title">
+					<h3 class="color">PROJECT</h3>
+					<h3></h3>
+					<h3>BLE / 모션인식 출입문 개폐기</h3>
+				</div>
+
+				<div class="project-content">
+					<table>
+						<tr>
+							<th><i class="fa-solid fa-calendar-days"></i></th>
+							<th>개발기간</th>
+							<td>2023.08 ~ 2023.12 ( 5개월 )</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-people-group"></i></th>
+							<th>개발인원</th>
+							<td>2명</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-circle-check"></i></th>
+							<th>담당역할</th>
+							<td>
+								S/W 개발<br>
+								 - BLE 통신 ( 기여도 100% )<br>
+								 - 기능 구현 ( 기여도 100% )
+							</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-computer"></i></th>
+							<th>작업 설명</th>
+							<td>
+								MicroWave를 통해 움직임과 핸드폰의 BLE 정보를 읽어내어<br>
+								사용자 감지가 될 경우 출입문을 개폐하는 장치 개발.<br>
+								기존 단말기를 신형 단말기로 포팅 후 교체 작업.
+						</td>
+						</tr>
+						<tr>
+							<th><i class="fa-solid fa-folder-tree"></i></th>
+							<th>개발환경</th>
+							<td>
+								- Embedded<br>
+								- OS : Linux <br>
+								- Tool : Simplicity studio 5 / Android Studio / Swift<br>
+								- Language : C<br>
+								- DB : maria DB<br>
+								- NET : BLE
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section id="section6"></section>
+	</div>
+
+
+	<script src="js/full-page-scroll.js"></script>
+	<script type="text/javascript">
+		new fullScroll({
+			displayDots: true,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease'
+		});
+	</script>
+
+
+</body>
+</html>
